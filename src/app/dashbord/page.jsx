@@ -1,9 +1,15 @@
 import UserInfo from "@/components/UserInfo"
+import MoneyUser from "@/components/MoneyUser"
+
+
 
 const page = ()=>{
+
     return(
         <div>
-            <UserInfo/>
+            {/* <UserInfo/> */}
+            <MoneyUser/>
+
         </div>
     )
 }

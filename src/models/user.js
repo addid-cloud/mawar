@@ -11,7 +11,7 @@ const userSchema = new Schema({
     },
     kelas:{
         type:String,
-        required:true
+        default:'X.1'
     },
 },{timestamps: true})
 

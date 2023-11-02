@@ -59,6 +59,7 @@ const RegisterForms = ()=>{
                 <input type="password" placeholder="masukan password kamu" onChange={(e)=>setPassword(e.target.value)} />
                 <label>Masukan Kelas:</label>
 <select id="Kelas" name="Kelas" onChange={(e) => {setKelas(e.target.value)}}>
+  <option value="" className="bg-slate-800 cursor-not-allowed invisible">kelas</option>
   <option value="X.1">X.1</option>
   <option value="X.2">X.2</option>
   <option value="X.3">X.3</option>
@@ -71,7 +72,7 @@ const RegisterForms = ()=>{
                 {error && (
                     <div className="bg-red-600 text-white w-fit text-sm py-1 px-3 rounded mt-2">{error}</div>
                     )}
-                <Link className="text-right text-sm mt-3 underline" href={"/register"}>Balik ke laman login</Link>
+                <Link className="text-right text-sm mt-3 underline" href={"/"}>Balik ke laman login</Link>
             </div>
         </div>
     </div>

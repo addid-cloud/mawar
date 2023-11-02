@@ -11,7 +11,7 @@ export const authOptions ={
             Credentials:{},
 
             async authorize(credentials){
-                const {name,password}= credentials
+                const {name,password,kelas}= credentials
                 try {
                     await connectMongoDB()
                     const user =await User.findOne({name})
@@ -30,8 +30,15 @@ export const authOptions ={
             }
         })
     ],
+    // callbacks:{
+    //     async session(session, user) {
+    //         session.user.password = user.;
+    //         return session;
+    //       },
+    // },
     session: {
       strategy: "jwt",
+      
     },
     secret: process.env.NEXTAUTH_SECRET,
     pages: {
