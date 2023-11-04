@@ -52,7 +52,7 @@ const RegisterForms = ()=>{
     }
     return(
         <div className="flex items-center justify-center h-screen">
-        <div className="shadow-xl p-5 rounded-md border-t-4 border-green-400 w-full sm:w-auto">
+        <div className="shadow-xl p-5 rounded-md border-t-4 border-green-400 w-full sm:w-auto bg-slate-50">
             <h1 className="text-xl font-bold my-4">Daftar dulu cuy</h1>
             <form onSubmit={handleSubmit} className="flex sm:flex-row flex-col gap-3 w-full">
                 <input type="text" placeholder="masukan nama kamu" onChange={(e)=>setName(e.target.value)}/>
