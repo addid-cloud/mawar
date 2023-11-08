@@ -34,4 +34,4 @@ const userSchema = new Schema({
 //   });
 //   const Money = mongoose.model('Money', moneySchema);
 const User = models.User || mongoose.model("User", userSchema)
-export default {User}
+export default User

@@ -7,9 +7,6 @@ const Pagination = ({news ,selectedNews})=>{
 return(
     <>
     <div className="flex justify-between items-center">
-        <Link href="/dashbord">
-        <House size={32} className="text-white"/>
-        </Link>
         <div>
         {categories.map((category) => {
             return (

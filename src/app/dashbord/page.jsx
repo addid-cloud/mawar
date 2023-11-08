@@ -6,6 +6,10 @@ import { fetchNews } from "@/utils/newsAPI";
 import NavBerita  from "@/components/NavBerita";
 import React from "react";
 import Header from "@/components/Artikel/Header";
+import Judul from "@/components/Artikel/Judul";
+import TopUp from "@/components/Modals/TopUp";
+import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const page = ()=>{
   const [selectedNews, setSelectedNews] = React.useState('nasional');
@@ -24,10 +28,12 @@ const page = ()=>{
         <div>
             {/* <UserInfo/> */}
             <MoneyUser/>
+            <Judul selectedNews={selectedNews}/>
             <NavBerita selectedNews={selectedNews} onSelect={changeCategory} />
-            <Header title="berita terbaru"  linkHref="/dashbord/berita" linkTitle="lihat yang lain..."/ >
+            <Header title="berita terbaru"  linkHref="/dashbord/berita" linkTitle="lihat yang lain..." selectedNews={selectedNews}/ >
             <Artikel news={news} selectedNews={selectedNews} />
-            <UserInfo />
+            <Footer/>
+            {/* <ScrollToTopButton/> */}
 
         </div>
     )

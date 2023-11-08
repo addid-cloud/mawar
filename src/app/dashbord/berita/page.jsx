@@ -2,6 +2,7 @@
 import Pagination from "@/utils/pagination";
 import React from "react";
 import { fetchNews } from "@/utils/newsAPI";
+import NavPagination from "@/components/NavPagination";
 const page = ()=>{
     const [selectedNews, setSelectedNews] = React.useState('nasional');
     const [news, setNews] = React.useState([]);
@@ -17,6 +18,7 @@ const page = ()=>{
       }, [selectedNews]);
     return(
         <>
+        <NavPagination/>
         <Pagination news={news} selectedNews={selectedNews}/>
         </>
     )

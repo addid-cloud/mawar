@@ -7,7 +7,7 @@ return (
 <>
     <div className=" bg-slate-50 mx-0 sm:mx-2 border-y-2 border-green-500 overflow-x-scroll sm:overflow-hidden">
         <div className="border-b border-gray-200">
-            <nav className="-mb-px flex" aria-label="Tabs">
+            <nav className="-mb-px flex gap-x-4" aria-label="Tabs">
                 {categories.map((category) => {
                 return (
                 <button key={category} onClick={()=> onSelect(category)}
