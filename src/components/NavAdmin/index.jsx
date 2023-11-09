@@ -1,5 +1,4 @@
 "use client"
-import Link from 'next/link';
 import React from 'react';
 
 const NavAdmin = ({ activeTab, setActiveTab }) => {
@@ -8,22 +7,30 @@ const NavAdmin = ({ activeTab, setActiveTab }) => {
       <div className="flex items-center justify-between">
         <div className="text-white text-xl font-semibold">Admin Dashboard</div>
         <div className="flex space-x-4">
-          <Link href={""}
+          <button
             className={`text-white hover:text-gray-300 focus:outline-none ${
               activeTab === 'messages' ? 'font-bold' : ''
             }`}
             onClick={() => setActiveTab('messages')}
           >
             Pesan
-          </Link>
-          <Link href={""}
+          </button>
+          <button
             className={`text-white hover:text-gray-300 focus:outline-none ${
               activeTab === 'view' ? 'font-bold' : ''
             }`}
             onClick={() => setActiveTab('view')}
           >
             Lihat
-          </Link>
+          </button>
+          <button
+            className={`text-white hover:text-gray-300 focus:outline-none ${
+              activeTab === 'home' ? 'font-bold' : ''
+            }`}
+            onClick={() => setActiveTab('home')}
+          >
+            home
+          </button>
         </div>
       </div>
     </nav>
