@@ -1,5 +1,5 @@
 "use client"
-import Pagination from "@/utils/pagination";
+import Pagination from "@/components/Pagination/Pagination";
 import React from "react";
 import { fetchNews } from "@/utils/newsAPI";
 import NavPagination from "@/components/NavPagination";

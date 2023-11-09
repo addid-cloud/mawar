@@ -1,7 +1,7 @@
 import { House } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
-import { NEWS_CATEGORY } from "./kategori/kategori";
+import { NEWS_CATEGORY } from "../../utils/kategori/kategori";
 const Pagination = ({news ,selectedNews})=>{
     let categories = NEWS_CATEGORY;
 return(
